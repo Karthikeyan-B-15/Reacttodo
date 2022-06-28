@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.inputContainer{
+  display: flex;
+  gap:10px;
+  width: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 40px;
 }
-
-.App-link {
-  color: #61dafb;
+.inputContainer input:nth-child(1){
+  width: 25%;
+  border-radius: 5px;
+  border: 1px solid #b1ada7;
+} 
+.inputContainer input:nth-child(1):focus{
+  outline: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputContainer input:nth-child(2){
+  width: 8%;
+  background-color: #92B4EC;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size:.85rem;
+  cursor: pointer;
+}
+.todo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  border-bottom:1px solid rgb(224, 219, 219) ;
+}
+.btn{
+  display: flex;
+  gap: 5px;
+}
+.btn button{
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+.todo input{
+  margin-left: 50px;
+}
+.todo p{
+  width: 80%;
+  text-align: center;
+  word-wrap: break-word;
+}
+.complete{
+  text-decoration: line-through;
+}
+.editbtn{
+  color:#92B4EC;
+}
+p:focus{
+  outline:none
 }
